@@ -1,5 +1,5 @@
 # docker-telegram-cli
-Docker for the Telegram-CLI, which will run ```$COMMAND``` afterwards.   
+Docker for the Telegram-CLI, which will run the setup, if incomplete, and ```$COMMAND``` afterwards.   
 
 > - [Source for this Docker](https://github.com/luckydonald/docker-telegram-cli)    
 > - [Telegram Hompage](https://telegram.org)    
