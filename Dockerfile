@@ -37,9 +37,10 @@ ENV TG_PUBKEY "$TG_HOME"/tg/tg-server.pub
 ENV KILLCACHE "YES PLZ! NAO!" # I just comment this out some time to trigger a rebuild from here on.
 COPY scripts/entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
-
+ENV CLI_DATA $TG_HOME/.telegram-cli
 ENTRYPOINT ["/entrypoint.sh"]
 
 CMD ["bash"]
 
 VOLUME $TG_HOME
+VOLUME $CLI_DATA
